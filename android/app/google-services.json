@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613712632512",
+    "project_id": "colimafc-f57e6",
+    "storage_bucket": "colimafc-f57e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613712632512:android:10edd7dc9e92e9e6ebeb25",
+        "android_client_info": {
+          "package_name": "com.memotoscano.colima_fc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613712632512-d635qjd98f4hvnqkt6m5iqttqmv8rjch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS9AjayXk8xcHMcwRbuRo08fpTXJVRvcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613712632512-d635qjd98f4hvnqkt6m5iqttqmv8rjch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
