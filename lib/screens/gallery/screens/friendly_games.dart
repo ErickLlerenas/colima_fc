@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:image_picker_saver/image_picker_saver.dart';
-import 'package:http/http.dart' as http;
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:image_picker_saver/image_picker_saver.dart';
+// import 'package:http/http.dart' as http;
+// import 'package:fluttertoast/fluttertoast.dart';
 
 class FriendlyGames extends StatefulWidget {
   const FriendlyGames({Key? key}) : super(key: key);
@@ -65,15 +65,15 @@ class _FriendlyGamesState extends State<FriendlyGames> {
               children: <Widget>[
                 Image.network(image),
                 SizedBox(height: 20),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
-                        textStyle: const TextStyle(fontSize: 18)),
-                    onPressed: () {
-                      Navigator.pop(context);
-                      downloadImage(image);
-                    },
-                    child: Text('Descargar'))
+                // ElevatedButton(
+                //     style: ElevatedButton.styleFrom(
+                //         primary: Colors.blue,
+                //         textStyle: const TextStyle(fontSize: 18)),
+                //     onPressed: () {
+                //       Navigator.pop(context);
+                //       downloadImage(image);
+                //     },
+                //     child: Text('Descargar'))
               ],
             ),
           ),
@@ -82,17 +82,17 @@ class _FriendlyGamesState extends State<FriendlyGames> {
     );
   }
 
-  Future<void> downloadImage(image) async {
-    var response = await http.get(Uri.parse(image));
-    if (response.statusCode == 200)
-      await ImagePickerSaver.saveFile(fileData: response.bodyBytes);
-    Fluttertoast.showToast(
-        msg: "La imagen ha sido guardada",
-        toastLength: Toast.LENGTH_LONG,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.teal,
-        textColor: Colors.white,
-        fontSize: 18.0);
-  }
+  // Future<void> downloadImage(image) async {
+  //   var response = await http.get(Uri.parse(image));
+  //   if (response.statusCode == 200)
+  //     await ImagePickerSaver.saveFile(fileData: response.bodyBytes);
+  //   Fluttertoast.showToast(
+  //       msg: "La imagen ha sido guardada",
+  //       toastLength: Toast.LENGTH_LONG,
+  //       gravity: ToastGravity.BOTTOM,
+  //       timeInSecForIosWeb: 1,
+  //       backgroundColor: Colors.teal,
+  //       textColor: Colors.white,
+  //       fontSize: 18.0);
+  // }
 }
